@@ -6,6 +6,7 @@ import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import {Block} from '../components';
 import {theme} from '../constants';
 import Couches from "../components/Couches";
+import New from "../components/New";
 
 const HomeScreen = ({navigation}) => {
     return (
@@ -81,7 +82,36 @@ const HomeScreen = ({navigation}) => {
                 />
             </ScrollView>
 
-            
+            <Block row center marginTop={10} marginBottom={10}>
+                <Text style={styles.title3}>
+                    New Arrivals
+                </Text>
+                <View style={styles.dot}/>
+                <Text style={styles.subtitle2}>
+                    Good Quality items
+                </Text>
+            </Block>
+
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+            >
+                <New
+                    src={require('../assets/images/sofa.png')}
+                    desc="Slakal sleeves short dress with three attractive colors"
+                    price="454.69"
+                />
+                <New
+                    src={require('../assets/images/lr.png')}
+                    desc="Slakal sleeves short dress with three attractive colors"
+                    price="233.69"
+                />
+                <New
+                    src={require('../assets/images/sofa.png')}
+                    desc="Slakal sleeves short dress with three attractive colors"
+                    price="211.69"
+                />
+            </ScrollView>
         </ScrollView>
     );
 };
@@ -143,6 +173,11 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         fontSize: 11,
         color: theme.colors.gray
+    },
+    title3: {
+        fontWeight: '800',
+        color: theme.colors.gray,
+        fontSize: 20
     }
 
 })
