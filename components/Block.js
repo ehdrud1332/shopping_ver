@@ -100,6 +100,7 @@ export default class Block extends Component {
         const {
             flex,
             row,
+            end,
             column,
             center,
             middle,
@@ -125,6 +126,7 @@ export default class Block extends Component {
             flex && { flex },
             flex === false && { flex: 0 }, // reset / disable flex
             row && styles.row,
+            end && styles.end,
             column && styles.column,
             center && styles.center,
             middle && styles.middle,
@@ -165,6 +167,9 @@ export const styles = StyleSheet.create({
     },
     row: {
         flexDirection: "row"
+    },
+    end: {
+        alignItems: "flex-end"
     },
     column: {
         flexDirection: "column"

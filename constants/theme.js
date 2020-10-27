@@ -2,7 +2,7 @@ const colors = {
     accent: "#f3534a",
     black: "#000000",
     white: "#FFFFFF",
-    gray: "#9DA3B4",
+    gray: "#4f4a4a",
     gray2: "#C5CCD6"
 };
 

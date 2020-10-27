@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Image} from 'react-native';
+import {Image} from 'react-native';
 import * as Font from 'expo-font';
 import {Asset} from 'expo-asset';
 import {AppLoading} from 'expo';
