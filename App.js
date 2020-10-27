@@ -5,6 +5,8 @@ import {Asset} from 'expo-asset';
 import {AppLoading} from 'expo';
 import {Ionicons} from '@expo/vector-icons';
 
+import Navigator from "./navigation/Navigator";
+
 const cacheImages = images =>
     images.map(image => {
         if(typeof image === 'string') {
@@ -33,9 +35,7 @@ const App = () => {
     const onFinish = () => setIsReady(true)
 
     return isReady ? (
-        <View>
-            <Text>Hello world, this is my app.</Text>
-        </View>
+        <Navigator />
     ) : (
         <AppLoading
             startAsync={loadAssets}
