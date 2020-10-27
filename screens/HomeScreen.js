@@ -7,6 +7,7 @@ import {Block} from '../components';
 import {theme} from '../constants';
 import Couches from "../components/Couches";
 import New from "../components/New";
+import Best from "../components/Best";
 
 const HomeScreen = ({navigation}) => {
     return (
@@ -110,6 +111,31 @@ const HomeScreen = ({navigation}) => {
                     src={require('../assets/images/sofa.png')}
                     desc="Slakal sleeves short dress with three attractive colors"
                     price="211.69"
+                />
+            </ScrollView>
+
+            <Text style={[styles.title3, {marginTop: 20}]}>
+                Best Sellers
+            </Text>
+
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+            >
+                <Best
+                    src={require('../assets/images/sofa.png')}
+                    title="Zara Furniture World"
+                    option="Get 35% OFF"
+                />
+                <Best
+                    src={require('../assets/images/rm.png')}
+                    title="IKEA Furniture World"
+                    option="Get 15% OFF"
+                />
+                <Best
+                    src={require('../assets/images/sofa.png')}
+                    title="Zara Furniture World"
+                    option="Get 35% OFF"
                 />
             </ScrollView>
         </ScrollView>
