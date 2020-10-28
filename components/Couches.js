@@ -15,7 +15,7 @@ const Couches = ({onPress, src, name, desc, price}) => {
                 source={src}
                 style={{width: 170, height: 110, borderRadius: 10}}
             />
-            <Block row center style={{marginVertical: 10}}>
+            <Block row center>
                 <Text style={styles.title}>
                     {name}
                 </Text>
